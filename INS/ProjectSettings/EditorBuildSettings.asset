@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/UI_First.unity
+    guid: 417a46ca72aba154383add4d062ea762
+  - enabled: 1
+    path: Assets/Scenes/QR_Scanner.unity
+    guid: 40f6bf88c3f403147894370bfa7a215d
+  - enabled: 1
+    path: Assets/Scenes/AstarProject.unity
+    guid: bc622eae8948b89469b8f80efb7e40f2
+  - enabled: 1
+    path: Assets/Scenes/FirstFloor.unity
+    guid: c0e32542c3568d446b242ae4d74e59e3
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 55118a6b24f3ddb41a5c838e2048f0e9,
+      type: 2}
