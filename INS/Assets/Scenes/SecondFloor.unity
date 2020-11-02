@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 35649521}
   - component: {fileID: 35649520}
   m_Layer: 0
-  m_Name: 224 - Office
+  m_Name: SF 224 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 62707638}
   - component: {fileID: 62707637}
   m_Layer: 0
-  m_Name: Staircase East N1A-SF-299D
+  m_Name: SF 299D Staircase East
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -565,7 +565,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1755988630}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &72460403
 GameObject:
@@ -646,7 +646,7 @@ GameObject:
   - component: {fileID: 95167447}
   - component: {fileID: 95167446}
   m_Layer: 0
-  m_Name: 226 - Office
+  m_Name: SF 226 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -741,7 +741,7 @@ GameObject:
   - component: {fileID: 113973528}
   - component: {fileID: 113973527}
   m_Layer: 0
-  m_Name: 217 - Gents Bathroom
+  m_Name: SF 217 - Gents Bathroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1008,7 +1008,7 @@ GameObject:
   - component: {fileID: 147268547}
   - component: {fileID: 147268546}
   m_Layer: 0
-  m_Name: Office Passage N1A-SF-South
+  m_Name: SF Hall South
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1088,7 +1088,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1755988630}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &153076665
 GameObject:
@@ -1103,7 +1103,7 @@ GameObject:
   - component: {fileID: 153076667}
   - component: {fileID: 153076666}
   m_Layer: 0
-  m_Name: 231 - Storage
+  m_Name: SF 231 - Storage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1198,7 +1198,7 @@ GameObject:
   - component: {fileID: 174098095}
   - component: {fileID: 174098094}
   m_Layer: 0
-  m_Name: 212 - Project Lab
+  m_Name: SF 212 - Project Lab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1340,7 +1340,7 @@ GameObject:
   - component: {fileID: 200925395}
   - component: {fileID: 200925394}
   m_Layer: 0
-  m_Name: 238 - Office
+  m_Name: SF 238 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1606,7 +1606,7 @@ GameObject:
   - component: {fileID: 251539802}
   - component: {fileID: 251539801}
   m_Layer: 0
-  m_Name: 233 - Office
+  m_Name: SF 233 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1701,7 +1701,7 @@ GameObject:
   - component: {fileID: 273213746}
   - component: {fileID: 273213745}
   m_Layer: 0
-  m_Name: 229 - Office
+  m_Name: SF 229 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1875,7 +1875,7 @@ GameObject:
   - component: {fileID: 369237409}
   - component: {fileID: 369237408}
   m_Layer: 0
-  m_Name: Lift Main N1A-SF-299E
+  m_Name: SF 299E Lift Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1955,7 +1955,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1755988630}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &374855568
 PrefabInstance:
@@ -2085,7 +2085,7 @@ GameObject:
   - component: {fileID: 441672460}
   - component: {fileID: 441672459}
   m_Layer: 0
-  m_Name: 201 - Office
+  m_Name: SF 201 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2223,7 +2223,7 @@ GameObject:
   - component: {fileID: 461636199}
   - component: {fileID: 461636198}
   m_Layer: 0
-  m_Name: 298A - Data
+  m_Name: SF 298A - Data
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2318,7 +2318,7 @@ GameObject:
   - component: {fileID: 487206168}
   - component: {fileID: 487206167}
   m_Layer: 0
-  m_Name: 213 - Project Lab
+  m_Name: SF 213 - Project Lab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2660,7 +2660,7 @@ GameObject:
   - component: {fileID: 560481405}
   - component: {fileID: 560481404}
   m_Layer: 0
-  m_Name: Waiting Area N1A-SF-236
+  m_Name: SF 236 Waiting Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2740,7 +2740,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1755988630}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &580368704
 GameObject:
@@ -2911,7 +2911,7 @@ GameObject:
   - component: {fileID: 648583660}
   - component: {fileID: 648583659}
   m_Layer: 0
-  m_Name: 240 - Office
+  m_Name: SF 240 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3208,7 +3208,7 @@ GameObject:
   - component: {fileID: 854815604}
   - component: {fileID: 854815603}
   m_Layer: 0
-  m_Name: 216 - Ladies Bathroom
+  m_Name: SF 216 - Ladies Bathroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3303,7 +3303,7 @@ GameObject:
   - component: {fileID: 855573928}
   - component: {fileID: 855573927}
   m_Layer: 0
-  m_Name: 219 - Conference Room
+  m_Name: SF 219 - Conference Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3398,7 +3398,7 @@ GameObject:
   - component: {fileID: 870763019}
   - component: {fileID: 870763018}
   m_Layer: 0
-  m_Name: 228 - Office
+  m_Name: SF 228 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3638,7 +3638,7 @@ GameObject:
   - component: {fileID: 916311514}
   - component: {fileID: 916311513}
   m_Layer: 0
-  m_Name: 236 - Waiting Area
+  m_Name: SF 236 - Waiting Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3862,7 +3862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951417153}
   m_Layer: 0
-  m_Name: 241 - Office
+  m_Name: SF 241 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4027,7 +4027,7 @@ GameObject:
   - component: {fileID: 957488712}
   - component: {fileID: 957488711}
   m_Layer: 0
-  m_Name: 207 - Koffee Station
+  m_Name: SF 207 - Koffee Station
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4122,7 +4122,7 @@ GameObject:
   - component: {fileID: 1006275626}
   - component: {fileID: 1006275625}
   m_Layer: 0
-  m_Name: 239 - Kitchen
+  m_Name: SF 239 - Kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4217,7 +4217,7 @@ GameObject:
   - component: {fileID: 1055774613}
   - component: {fileID: 1055774612}
   m_Layer: 0
-  m_Name: 210 - Project Lab
+  m_Name: SF 210 - Project Lab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4312,7 +4312,7 @@ GameObject:
   - component: {fileID: 1062976062}
   - component: {fileID: 1062976061}
   m_Layer: 0
-  m_Name: 203 - Office
+  m_Name: SF 203 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4407,7 +4407,7 @@ GameObject:
   - component: {fileID: 1066837804}
   - component: {fileID: 1066837803}
   m_Layer: 0
-  m_Name: 215 - Storage
+  m_Name: SF 215 - Storage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4582,7 +4582,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1755988630}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1144509973
 GameObject:
@@ -4597,7 +4597,7 @@ GameObject:
   - component: {fileID: 1144509975}
   - component: {fileID: 1144509974}
   m_Layer: 0
-  m_Name: Office Passage N1A-SF-North
+  m_Name: SF Hall North
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4919,7 +4919,7 @@ GameObject:
   - component: {fileID: 1173514530}
   - component: {fileID: 1173514529}
   m_Layer: 0
-  m_Name: 244 - Office
+  m_Name: SF 244 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5014,7 +5014,7 @@ GameObject:
   - component: {fileID: 1210520549}
   - component: {fileID: 1210520548}
   m_Layer: 0
-  m_Name: 211 - Project Lab
+  m_Name: SF 211 - Project Lab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5109,7 +5109,7 @@ GameObject:
   - component: {fileID: 1222184813}
   - component: {fileID: 1222184812}
   m_Layer: 0
-  m_Name: 205 - Project Lab
+  m_Name: SF 205 - Project Lab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5204,7 +5204,7 @@ GameObject:
   - component: {fileID: 1246874517}
   - component: {fileID: 1246874516}
   m_Layer: 0
-  m_Name: 299G - Lift
+  m_Name: SF 299G - Lift
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5365,7 +5365,7 @@ GameObject:
   - component: {fileID: 1272035772}
   - component: {fileID: 1272035771}
   m_Layer: 0
-  m_Name: 204 - Office
+  m_Name: SF 204 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5581,7 +5581,7 @@ GameObject:
   - component: {fileID: 1303196214}
   - component: {fileID: 1303196213}
   m_Layer: 0
-  m_Name: 221 - Office
+  m_Name: SF 221 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5966,7 +5966,7 @@ GameObject:
   - component: {fileID: 1386847283}
   - component: {fileID: 1386847282}
   m_Layer: 0
-  m_Name: 298B - Electrical
+  m_Name: SF 298B - Electrical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6142,7 +6142,7 @@ GameObject:
   - component: {fileID: 1408414651}
   - component: {fileID: 1408414650}
   m_Layer: 0
-  m_Name: 242 - Office
+  m_Name: SF 242 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6237,7 +6237,7 @@ GameObject:
   - component: {fileID: 1415622361}
   - component: {fileID: 1415622360}
   m_Layer: 0
-  m_Name: 230 - Copy Room
+  m_Name: SF 230 - Copy Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6332,7 +6332,7 @@ GameObject:
   - component: {fileID: 1473223058}
   - component: {fileID: 1473223057}
   m_Layer: 0
-  m_Name: 223 - Office
+  m_Name: SF 223 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6427,7 +6427,7 @@ GameObject:
   - component: {fileID: 1502529614}
   - component: {fileID: 1502529613}
   m_Layer: 0
-  m_Name: 220 - Office
+  m_Name: SF 220 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6601,7 +6601,7 @@ GameObject:
   - component: {fileID: 1548148709}
   - component: {fileID: 1548148708}
   m_Layer: 0
-  m_Name: 214 - Project Lab
+  m_Name: SF 214 - Project Lab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6696,7 +6696,7 @@ GameObject:
   - component: {fileID: 1556571951}
   - component: {fileID: 1556571950}
   m_Layer: 0
-  m_Name: 208 - Kitchen
+  m_Name: SF 208 - Kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6791,7 +6791,7 @@ GameObject:
   - component: {fileID: 1571089731}
   - component: {fileID: 1571089730}
   m_Layer: 0
-  m_Name: 243 - Office
+  m_Name: SF 243 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6906,7 +6906,7 @@ GameObject:
   - component: {fileID: 1642531932}
   - component: {fileID: 1642531931}
   m_Layer: 0
-  m_Name: 225 - Office
+  m_Name: SF 225 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7093,7 +7093,7 @@ GameObject:
   - component: {fileID: 1675741485}
   - component: {fileID: 1675741484}
   m_Layer: 0
-  m_Name: 234 - Conference
+  m_Name: SF 234 - Conference
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7188,7 +7188,7 @@ GameObject:
   - component: {fileID: 1676258535}
   - component: {fileID: 1676258534}
   m_Layer: 0
-  m_Name: 202 - Office
+  m_Name: SF 202 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7473,7 +7473,7 @@ GameObject:
   - component: {fileID: 1738922843}
   - component: {fileID: 1738922842}
   m_Layer: 0
-  m_Name: Staircase West N1A-SF-299C
+  m_Name: SF 299C Staircase West
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7553,7 +7553,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1755988630}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1741790064
 GameObject:
@@ -7568,7 +7568,7 @@ GameObject:
   - component: {fileID: 1741790066}
   - component: {fileID: 1741790065}
   m_Layer: 0
-  m_Name: 218 - Shower
+  m_Name: SF 218 - Shower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7663,7 +7663,7 @@ GameObject:
   - component: {fileID: 1743591915}
   - component: {fileID: 1743591914}
   m_Layer: 0
-  m_Name: 206 - Project Lab
+  m_Name: SF 206 - Project Lab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7773,12 +7773,12 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 1144509977}
+  - {fileID: 147268549}
   - {fileID: 560481407}
   - {fileID: 1738922845}
   - {fileID: 62707640}
   - {fileID: 369237411}
   - {fileID: 1073890546}
-  - {fileID: 147268549}
   m_Father: {fileID: 808992717}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7795,7 +7795,7 @@ GameObject:
   - component: {fileID: 1786240174}
   - component: {fileID: 1786240173}
   m_Layer: 0
-  m_Name: 299E - Lift
+  m_Name: SF 299E - Lift
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7969,7 +7969,7 @@ GameObject:
   - component: {fileID: 1818634733}
   - component: {fileID: 1818634732}
   m_Layer: 0
-  m_Name: 227 - Office
+  m_Name: SF 227 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8064,7 +8064,7 @@ GameObject:
   - component: {fileID: 1824520331}
   - component: {fileID: 1824520330}
   m_Layer: 0
-  m_Name: 222 - Office
+  m_Name: SF 222 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8159,7 +8159,7 @@ GameObject:
   - component: {fileID: 1864148958}
   - component: {fileID: 1864148957}
   m_Layer: 0
-  m_Name: 209 - Project Lab
+  m_Name: SF 209 - Project Lab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8527,7 +8527,7 @@ GameObject:
   - component: {fileID: 2043642604}
   - component: {fileID: 2043642603}
   m_Layer: 0
-  m_Name: 237 - Office
+  m_Name: SF 237 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8622,7 +8622,7 @@ GameObject:
   - component: {fileID: 2064499777}
   - component: {fileID: 2064499776}
   m_Layer: 0
-  m_Name: 235 - Office
+  m_Name: SF 235 - Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

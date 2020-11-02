@@ -110,6 +110,56 @@ public class InputSearch : MonoBehaviour
         items.Add("FF 158 OFFICE");
 
 
+        //SecondFloor
+        items.Add("SF 201 - Office");
+        items.Add("SF 202 - Office");
+        items.Add("SF 203 - Office");
+        items.Add("SF 204 - Office");
+        items.Add("SF 205 - Project Lab");
+        items.Add("SF 206 - Project Lab");
+        items.Add("SF 207 - Koffee Station");
+        items.Add("SF 208 - Kitchen");
+        items.Add("SF 299E - Lift");
+        items.Add("SF 299G - Lift");
+        items.Add("SF 298A - Data");
+        items.Add("SF 298B - Electrical");
+        items.Add("SF 209 - Project Lab");
+        items.Add("SF 210 - Project Lab");
+        items.Add("SF 211 - Project Lab");
+        items.Add("SF 212 - Project Lab");
+        items.Add("SF 213 - Project Lab");
+        items.Add("SF 214 - Project Lab");
+        items.Add("SF 215 - Storage");
+        items.Add("SF 216 - Ladies Bathroom");
+        items.Add("SF 217 - Gents Bathroom");
+        items.Add("SF 218 - Shower");
+        items.Add("SF 219 - Conference Room");
+        items.Add("SF 220 - Office");
+        items.Add("SF 221 - Office");
+        items.Add("SF 222 - Office");
+        items.Add("SF 223 - Office");
+        items.Add("SF 224 - Office");
+        items.Add("SF 225 - Office");
+        items.Add("SF 226 - Office");
+        items.Add("SF 227 - Office");
+        items.Add("SF 228 - Office");
+        items.Add("SF 229 - Office");
+        items.Add("SF 230 - Copy Room");
+        items.Add("SF 231 - Storage");
+        items.Add("SF 233 - Office");
+        items.Add("SF 234 - Conference");
+        items.Add("SF 235 - Office");
+        items.Add("SF 236 - Waiting Area");
+        items.Add("SF 237 - Office");
+        items.Add("SF 238 - Office");
+        items.Add("SF 239 - Kitchen");
+        items.Add("SF 240 - Office");
+        items.Add("SF 241 - Office");
+        items.Add("SF 242 - Office");
+        items.Add("SF 243 - Office");
+        items.Add("SF 244 - Office");
+
+
 
         foreach (var item in items)
         {
@@ -584,7 +634,247 @@ public class InputSearch : MonoBehaviour
         }
 
 
-            print("DestSearchPos: " + DestSearchPos);
+
+
+        //Second Floor
+        if (dropdown.captionText.text == "SF 201 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 201 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 202 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 202 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 203 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 203 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 204 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 204 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 205 - Project Lab")//
+        {
+            GlobalValues.myDestPosString = "SF 205 - Project Lab";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 206 - Project Lab")//
+        {
+            GlobalValues.myDestPosString = "SF 206 - Project Lab";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 207 - Koffee Station")//
+        {
+            GlobalValues.myDestPosString = "SF 207 - Koffee Station";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 208 - Kitchen")//
+        {
+            GlobalValues.myDestPosString = "SF 208 - Kitchen";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 299E - Lift")//
+        {
+            GlobalValues.myDestPosString = "SF 299E - Lift";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 299G - Lift")//
+        {
+            GlobalValues.myDestPosString = "SF 299G - Lift";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 298A - Data")//
+        {
+            GlobalValues.myDestPosString = "SF 298A - Data";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 298B - Electrical")//
+        {
+            GlobalValues.myDestPosString = "SF 298B - Electrical";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 209 - Project Lab")//
+        {
+            GlobalValues.myDestPosString = "SF 209 - Project Lab";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 210 - Project Lab")//
+        {
+            GlobalValues.myDestPosString = "SF 210 - Project Lab";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 211 - Project Lab")//
+        {
+            GlobalValues.myDestPosString = "SF 211 - Project Lab";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 212 - Project Lab")//
+        {
+            GlobalValues.myDestPosString = "SF 212 - Project Lab";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 213 - Project Lab")//
+        {
+            GlobalValues.myDestPosString = "SF 213 - Project Lab";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 214 - Project Lab")//
+        {
+            GlobalValues.myDestPosString = "SF 214 - Project Lab";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 215 - Storage")//
+        {
+            GlobalValues.myDestPosString = "SF 215 - Storage";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 216 - Ladies Bathroom")//
+        {
+            GlobalValues.myDestPosString = "SF 216 - Ladies Bathroom";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 217 - Gents Bathroom")//
+        {
+            GlobalValues.myDestPosString = "SF 217 - Gents Bathroom";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 218 - Shower")//
+        {
+            GlobalValues.myDestPosString = "SF 218 - Shower";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 219 - Conference Room")//
+        {
+            GlobalValues.myDestPosString = "SF 219 - Conference Room";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 220 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 220 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 221 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 221 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 222 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 222 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 223 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 223 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 224 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 224 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 225 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 225 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 226 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 226 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 227 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 227 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 228 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 228 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 229 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 229 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 230 - Copy Room")//
+        {
+            GlobalValues.myDestPosString = "SF 230 - Copy Room";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 231 - Storage")//
+        {
+            GlobalValues.myDestPosString = "SF 231 - Storage";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 233 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 233 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 234 - Conference")//
+        {
+            GlobalValues.myDestPosString = "SF 234 - Conference";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 235 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 235 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 236 - Waiting Area")//
+        {
+            GlobalValues.myDestPosString = "SF 236 - Waiting Area";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 237 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 237 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 238 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 238 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 239 - Kitchen")//
+        {
+            GlobalValues.myDestPosString = "SF 239 - Kitchen";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 240 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 240 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 241 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 241 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 242 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 242 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 243 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 243 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+        if (dropdown.captionText.text == "SF 244 - Office")//
+        {
+            GlobalValues.myDestPosString = "SF 244 - Office";
+            GlobalValues.destFloorLvl = 2;
+        }
+
+
+        print("DestSearchPos: " + DestSearchPos);
 
     }
 }

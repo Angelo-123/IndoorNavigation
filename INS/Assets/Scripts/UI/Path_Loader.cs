@@ -20,13 +20,18 @@ public class Path_Loader : MonoBehaviour
             GlobalValues.inputSearch = GameObject.Find("TextSearch").GetComponent<InputSearch>();
         }
 
-        if(GlobalValues.startFloorLvl == 1)
+
+        if (GlobalValues.startFloorLvl == 0)
+        {
+            SceneManager.LoadScene("AStarProject");
+        }
+        else if (GlobalValues.startFloorLvl == 1)
         {
             SceneManager.LoadScene("FirstFloor");
         }
-        else
+        else if (GlobalValues.startFloorLvl == 2)
         {
-            SceneManager.LoadScene("AStarProject");
+            SceneManager.LoadScene("SecondFloor");
         }
         
 

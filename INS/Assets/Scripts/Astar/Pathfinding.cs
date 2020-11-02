@@ -242,6 +242,48 @@ public class Pathfinding : MonoBehaviour
         }
 
 
+        //Second Floor
+        if (GlobalValues.startFloorLvl == 2)
+        {
+            if (StartPosString == "SF Hall North")//SF Hall North
+            {
+                startPosObject = GameObject.Find("SF Hall North");
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+            if (StartPosString == "SF Hall South")//SF Hall South
+            {
+                startPosObject = GameObject.Find("SF Hall South");
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+            if (StartPosString == "SF 236 Waiting Area")//SF 236 Waiting Area
+            {
+                startPosObject = GameObject.Find("SF 236 Waiting Area");
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+            if (StartPosString == "SF 299C Staircase West")//SF 299C Staircase West
+            {
+                startPosObject = GameObject.Find("SF 299C Staircase West");
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+            if (StartPosString == "SF 299D Staircase East")//SF 299D Staircase East
+            {
+                startPosObject = GameObject.Find("SF 299D Staircase East");
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+            if (StartPosString == "SF 299E Lift Main")//SF 299E Lift Main
+            {
+                startPosObject = GameObject.Find("SF 299E Lift Main");
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+            if (StartPosString == "SF 299H Passage South")//SF 299H Passage South
+            {
+                startPosObject = GameObject.Find("SF 299H Passage South");
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+
+        }
+
+
         StartPosition.position = StartVec;
         print("StartVect set: " + StartVec);
     }
@@ -672,7 +714,249 @@ public class Pathfinding : MonoBehaviour
         }
 
 
-        TargetPosition.position = TargetVec;
+        //Second Floor
+        if (GlobalValues.destFloorLvl == 2)
+        {
+            if (DestPosString == "SF 201 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 201 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 202 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 202 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 203 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 203 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 204 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 204 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 205 - Project Lab")//
+            {
+                destPosObject = GameObject.Find("SF 205 - Project Lab");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 206 - Project Lab")//
+            {
+                destPosObject = GameObject.Find("SF 206 - Project Lab");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 207 - Koffee Station")//
+            {
+                destPosObject = GameObject.Find("SF 207 - Koffee Station");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 208 - Kitchen")//
+            {
+                destPosObject = GameObject.Find("SF 208 - Kitchen");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 299E - Lift")//
+            {
+                destPosObject = GameObject.Find("SF 299E - Lift");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 299G - Lift")//
+            {
+                destPosObject = GameObject.Find("SF 299G - Lift");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 298A - Data")//
+            {
+                destPosObject = GameObject.Find("SF 298A - Data");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 298B - Electrical")//
+            {
+                destPosObject = GameObject.Find("SF 298B - Electrical");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 209 - Project Lab")//
+            {
+                destPosObject = GameObject.Find("SF 209 - Project Lab");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 210 - Project Lab")//
+            {
+                destPosObject = GameObject.Find("SF 210 - Project Lab");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 211 - Project Lab")//
+            {
+                destPosObject = GameObject.Find("SF 211 - Project Lab");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 212 - Project Lab")//
+            {
+                destPosObject = GameObject.Find("SF 212 - Project Lab");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 213 - Project Lab")//
+            {
+                destPosObject = GameObject.Find("SF 213 - Project Lab");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 214 - Project Lab")//
+            {
+                destPosObject = GameObject.Find("SF 214 - Project Lab");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 215 - Storage")//
+            {
+                destPosObject = GameObject.Find("SF 215 - Storage");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 216 - Ladies Bathroom")//
+            {
+                destPosObject = GameObject.Find("SF 216 - Ladies Bathroom");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 217 - Gents Bathroom")//
+            {
+                destPosObject = GameObject.Find("SF 217 - Gents Bathroom");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 218 - Shower")//
+            {
+                destPosObject = GameObject.Find("SF 218 - Shower");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 219 - Conference Room")//
+            {
+                destPosObject = GameObject.Find("SF 219 - Conference Room");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 220 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 220 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 221 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 221 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 222 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 222 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 223 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 223 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 224 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 224 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 225 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 225 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 226 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 226 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 227 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 227 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 228 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 228 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 229 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 229 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 230 - Copy Room")//
+            {
+                destPosObject = GameObject.Find("SF 230 - Copy Room");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 231 - Storage")//
+            {
+                destPosObject = GameObject.Find("SF 231 - Storage");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 233 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 233 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 234 - Conference")//
+            {
+                destPosObject = GameObject.Find("SF 234 - Conference");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 235 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 235 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 236 - Waiting Area")//
+            {
+                destPosObject = GameObject.Find("SF 236 - Waiting Area");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 237 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 237 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 238 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 238 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 239 - Kitchen")//
+            {
+                destPosObject = GameObject.Find("SF 239 - Kitchen");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 240 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 240 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 241 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 241 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 242 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 242 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 243 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 243 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            if (DestPosString == "SF 244 - Office")//
+            {
+                destPosObject = GameObject.Find("SF 244 - Office");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+
+        }
+
+
+            TargetPosition.position = TargetVec;
         print("TargetVec set: " + TargetVec);
     }
 

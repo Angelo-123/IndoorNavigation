@@ -35,7 +35,14 @@ public class DropdownQR : MonoBehaviour
         items.Add("FF ENTRANCE SOUTH");
         items.Add("FF HALL SOUTH");
         items.Add("FF HALL NORTH");
-
+        //Second Floor
+        items.Add("SF Hall North");
+        items.Add("SF Hall South");
+        items.Add("SF 236 Waiting Area");
+        items.Add("SF 299C Staircase West");
+        items.Add("SF 299D Staircase East");
+        items.Add("SF 299E Lift Main");
+        items.Add("SF 299H Passage South");
 
         foreach (var item in items)
         {
@@ -136,6 +143,51 @@ public class DropdownQR : MonoBehaviour
             GlobalValues.myStartPosString = "FF HALL NORTH";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 1;
+        }
+
+
+        //Second Floor
+        if (index == 13)//SF Hall North
+        {
+            GlobalValues.myStartPosString = "SF Hall North";
+            GlobalValues.newPath = true;
+            GlobalValues.startFloorLvl = 2;
+        }
+        if (index == 14)//SF Hall South
+        {
+            GlobalValues.myStartPosString = "SF Hall South";
+            GlobalValues.newPath = true;
+            GlobalValues.startFloorLvl = 2;
+        }
+        if (index == 15)//SF 236 Waiting Area
+        {
+            GlobalValues.myStartPosString = "SF 236 Waiting Area";
+            GlobalValues.newPath = true;
+            GlobalValues.startFloorLvl = 2;
+        }
+        if (index == 16)//SF 299C Staircase West
+        {
+            GlobalValues.myStartPosString = "SF 299C Staircase West";
+            GlobalValues.newPath = true;
+            GlobalValues.startFloorLvl = 2;
+        }
+        if (index == 17)//SF 299D Staircase East
+        {
+            GlobalValues.myStartPosString = "SF 299D Staircase East";
+            GlobalValues.newPath = true;
+            GlobalValues.startFloorLvl = 2;
+        }
+        if (index == 18)//SF 299E Lift Main
+        {
+            GlobalValues.myStartPosString = "SF 299E Lift Main";
+            GlobalValues.newPath = true;
+            GlobalValues.startFloorLvl = 2;
+        }
+        if (index == 19)//SF 299H Passage South
+        {
+            GlobalValues.myStartPosString = "SF 299H Passage South";
+            GlobalValues.newPath = true;
+            GlobalValues.startFloorLvl = 2;
         }
         
 
