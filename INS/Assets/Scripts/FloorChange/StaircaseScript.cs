@@ -17,6 +17,14 @@ public class StaircaseScript : MonoBehaviour
             GlobalValues.newPath = true;
             SceneManager.LoadScene("FirstFloor");
         }
+        if ((GlobalValues.startFloorLvl == 0) && (GlobalValues.destFloorLvl == 2))
+        {
+            GlobalValues.startFloorLvl = 2;
+            GlobalValues.oldFloorLvl = 0;
+            GlobalValues.newPath = true;
+            SceneManager.LoadScene("SecondFloor");
+        }
+
 
         if ((GlobalValues.startFloorLvl == 1) && (GlobalValues.destFloorLvl == 0))
         {
@@ -25,7 +33,29 @@ public class StaircaseScript : MonoBehaviour
             GlobalValues.newPath = true;
             SceneManager.LoadScene("AstarProject");
         }
+        if ((GlobalValues.startFloorLvl == 1) && (GlobalValues.destFloorLvl == 2))
+        {
+            GlobalValues.startFloorLvl = 2;
+            GlobalValues.oldFloorLvl = 1;
+            GlobalValues.newPath = true;
+            SceneManager.LoadScene("SecondFloor");
+        }
 
+
+        if ((GlobalValues.startFloorLvl == 2) && (GlobalValues.destFloorLvl == 0))
+        {
+            GlobalValues.startFloorLvl = 0;
+            GlobalValues.oldFloorLvl = 2;
+            GlobalValues.newPath = true;
+            SceneManager.LoadScene("AstarProject");
+        }
+        if ((GlobalValues.startFloorLvl == 2) && (GlobalValues.destFloorLvl == 1))
+        {
+            GlobalValues.startFloorLvl = 1;
+            GlobalValues.oldFloorLvl = 2;
+            GlobalValues.newPath = true;
+            SceneManager.LoadScene("FirstFloor");
+        }
 
     }
 }

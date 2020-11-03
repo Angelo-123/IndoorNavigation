@@ -31,6 +31,8 @@ public class Pathfinding : MonoBehaviour
     public string DestPosString;
     public GameObject destPosObject;
 
+    
+
 
 
     private void Awake()//When the program starts
@@ -66,7 +68,6 @@ public class Pathfinding : MonoBehaviour
         {
             newFloorPos();
         }
-
         
         FindPath(StartVec, TargetVec);
 
@@ -966,27 +967,88 @@ public class Pathfinding : MonoBehaviour
 
     private void changeDestPos()
     {
-        //DestPosString = GlobalValues.myDestPosString;
+        if (GlobalValues.destFloorBlock == 1)
+        {
+            GlobalValues.eastStaircase = false;
+        }
+        else if (GlobalValues.destFloorBlock == 4)
+        {
+            GlobalValues.eastStaircase = true;
+        }
+        else if (GlobalValues.destFloorBlock == 2)
+        {
+            if ((GlobalValues.startFloorBlock == 1) || (GlobalValues.startFloorBlock == 2))
+            {
+                GlobalValues.eastStaircase = false;
+            }
+            else if ((GlobalValues.startFloorBlock == 3) || (GlobalValues.startFloorBlock == 4))
+            {
+                GlobalValues.eastStaircase = true;
+            }
+        }
+        else if (GlobalValues.destFloorBlock == 3)
+        {
+            if ((GlobalValues.startFloorBlock == 1) || (GlobalValues.startFloorBlock == 2))
+            {
+                GlobalValues.eastStaircase = false;
+            }
+            else if ((GlobalValues.startFloorBlock == 3) || (GlobalValues.startFloorBlock == 4))
+            {
+                GlobalValues.eastStaircase = true;
+            }
+        }
 
         //If the user starts on the ground floor
         if (GlobalValues.startFloorLvl == 0)
         {
-            destPosObject = GameObject.Find("Staircase East N1A-GF-G99G");
-            TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            if (GlobalValues.eastStaircase)
+            {
+                destPosObject = GameObject.Find("Staircase East N1A-GF-G99G");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            else if (!GlobalValues.eastStaircase)
+            {
+                destPosObject = GameObject.Find("Staircase West N1A-GF-G99H");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+
         }
 
         //If the user starts on the first floor
         if (GlobalValues.startFloorLvl == 1)
         {
-            destPosObject = GameObject.Find("FF 199G STAIRS EAST");
-            TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            if (GlobalValues.eastStaircase)
+            {
+                destPosObject = GameObject.Find("FF 199G STAIRS EAST");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            else if (!GlobalValues.eastStaircase)
+            {
+                destPosObject = GameObject.Find("FF 199H STAIRS WEST");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
         }
 
+        //If the user starts on the second floor
+        if (GlobalValues.startFloorLvl == 2)
+        {
+            if (GlobalValues.eastStaircase)
+            {
+                destPosObject = GameObject.Find("SF 299D Staircase East");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+            else if (!GlobalValues.eastStaircase)
+            {
+                destPosObject = GameObject.Find("SF 299C Staircase West");
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+        }
     }
 
 
     private void newFloorPos()
     {
+        /*
         if(GlobalValues.oldFloorLvl == 0)
         {
             startPosObject = GameObject.Find("FF 199G STAIRS EAST");
@@ -998,6 +1060,47 @@ public class Pathfinding : MonoBehaviour
         {
             startPosObject = GameObject.Find("Staircase East N1A-GF-G99G");
             StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+        }
+        */
+
+        
+
+        if (GlobalValues.eastStaircase)
+        {
+            if (GlobalValues.startFloorLvl == 0)
+            {
+                startPosObject = GameObject.Find("Staircase East N1A-GF-G99G");
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+            else if (GlobalValues.startFloorLvl == 1)
+            {
+                startPosObject = GameObject.Find("FF 199G STAIRS EAST");
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+            else if (GlobalValues.startFloorLvl == 2)
+            {
+                startPosObject = GameObject.Find("SF 299D Staircase East");
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+
+        }
+        else if (!GlobalValues.eastStaircase)
+        {
+            if (GlobalValues.startFloorLvl == 0)
+            {
+                startPosObject = GameObject.Find("Staircase West N1A-GF-G99H");
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+            else if (GlobalValues.startFloorLvl == 1)
+            {
+                startPosObject = GameObject.Find("FF 199H STAIRS WEST");
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+            else if (GlobalValues.startFloorLvl == 2)
+            {
+                startPosObject = GameObject.Find("SF 299C Staircase West");
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
         }
     }
 }

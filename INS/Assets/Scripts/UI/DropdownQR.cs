@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class DropdownQR : MonoBehaviour
 {
-    //public GameObject startPosObject;
-
-    //public string myStartPos;
 
     void Awake()
     {
@@ -64,47 +61,55 @@ public class DropdownQR : MonoBehaviour
 
     private void UpdateDest(int index)
     {
+        //Ground Floor
         if (index == 0)//Entrance East
         {
             GlobalValues.myStartPosString = "Entrance East N1A-GF-G99K";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 0;
+            GlobalValues.startFloorBlock = 4;
         }
         if (index == 1)//Entrance South
         {
             GlobalValues.myStartPosString = "Entrance South N1A-GF";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 0;
+            GlobalValues.startFloorBlock = 3;
         }
         if (index == 2)//Lift Main
         {
             GlobalValues.myStartPosString = "Lift Main N1A-GF-G99F";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 0;
+            GlobalValues.startFloorBlock = 4;
         }
         if (index == 3)//Staircase East
         {
             GlobalValues.myStartPosString = "Staircase East N1A-GF-G99G";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 0;
+            GlobalValues.startFloorBlock = 4;
         }
         if (index == 4)//Staircase West
         {
             GlobalValues.myStartPosString = "Staircase West N1A-GF-G99H";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 0;
+            GlobalValues.startFloorBlock = 1;
         }
         if (index == 5)//Waiting Area
         {
             GlobalValues.myStartPosString = "Waiting Area N1A-GF-G42";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 0;
+            GlobalValues.startFloorBlock = 4;
         }
         if (index == 6)//Office Passage
         {
             GlobalValues.myStartPosString = "Office Passage N1A-GF-G99I";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 0;
+            GlobalValues.startFloorBlock = 2;
         }
 
         //First Floor
@@ -112,37 +117,43 @@ public class DropdownQR : MonoBehaviour
         {
             GlobalValues.myStartPosString = "FF 150 WAITING AREA";
             GlobalValues.newPath = true;
-            GlobalValues.startFloorLvl = 1;
+            GlobalValues.startFloorLvl = 1; 
+            GlobalValues.startFloorBlock = 4;
         }
         if (index == 8)//FF 199G STAIRS EAST
         {
             GlobalValues.myStartPosString = "FF 199G STAIRS EAST";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 1;
+            GlobalValues.startFloorBlock = 4;
         }
         if (index == 9)//FF 199H STAIRS WEST
         {
             GlobalValues.myStartPosString = "FF 199H STAIRS WEST";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 1;
+            GlobalValues.startFloorBlock = 1;
         }
         if (index == 10)//FF ENTRANCE SOUTH
         {
             GlobalValues.myStartPosString = "FF ENTRANCE SOUTH";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 1;
+            GlobalValues.startFloorBlock = 3;
         }
         if (index == 11)//FF HALL SOUTH
         {
             GlobalValues.myStartPosString = "FF HALL SOUTH";
             GlobalValues.newPath = true;
-            GlobalValues.startFloorLvl = 1;
+            GlobalValues.startFloorLvl = 1; 
+            GlobalValues.startFloorBlock = 2;
         }
         if (index == 12)//FF HALL NORTH
         {
             GlobalValues.myStartPosString = "FF HALL NORTH";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 1;
+            GlobalValues.startFloorBlock = 2;
         }
 
 
@@ -152,46 +163,50 @@ public class DropdownQR : MonoBehaviour
             GlobalValues.myStartPosString = "SF Hall North";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 2;
+            GlobalValues.startFloorBlock = 2;
         }
         if (index == 14)//SF Hall South
         {
             GlobalValues.myStartPosString = "SF Hall South";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 2;
+            GlobalValues.startFloorBlock = 2;
         }
         if (index == 15)//SF 236 Waiting Area
         {
             GlobalValues.myStartPosString = "SF 236 Waiting Area";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 2;
+            GlobalValues.startFloorBlock = 4;
         }
         if (index == 16)//SF 299C Staircase West
         {
             GlobalValues.myStartPosString = "SF 299C Staircase West";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 2;
+            GlobalValues.startFloorBlock = 1;
         }
         if (index == 17)//SF 299D Staircase East
         {
             GlobalValues.myStartPosString = "SF 299D Staircase East";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 2;
+            GlobalValues.startFloorBlock = 4;
         }
         if (index == 18)//SF 299E Lift Main
         {
             GlobalValues.myStartPosString = "SF 299E Lift Main";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 2;
+            GlobalValues.startFloorBlock = 4;
         }
         if (index == 19)//SF 299H Passage South
         {
             GlobalValues.myStartPosString = "SF 299H Passage South";
             GlobalValues.newPath = true;
             GlobalValues.startFloorLvl = 2;
+            GlobalValues.startFloorBlock = 3;
         }
-        
-
-        //print("string start: " + myStartPos);
 
     }
 }
