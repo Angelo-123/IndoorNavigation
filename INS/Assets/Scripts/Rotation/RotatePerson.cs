@@ -26,21 +26,30 @@ public class RotatePerson : MonoBehaviour
     {       
         Input.gyro.enabled = true;
         Input.compass.enabled = true;
-        triggered = false;
+        //triggered = false;
+        StartCoroutine(LateStart((float)0.1));
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator LateStart(float waitTime)
     {
+        yield return new WaitForSeconds(waitTime);
 
+
+        StartVec = GlobalValues.pathScript.StartVec;
+        User.transform.position = StartVec;
+        oldRotDeg = Input.compass.magneticHeading;
+        User.transform.rotation = Quaternion.Euler(0, -oldRotDeg, 0);
+        triggered = true;
+    }
+
+        // Update is called once per frame
+        void Update()
+    {
+        /*
         if(triggered == false)
         {
-            StartVec = GlobalValues.pathScript.StartVec;
-            User.transform.position = StartVec;
-            oldRotDeg = Input.compass.magneticHeading;
-            User.transform.rotation = Quaternion.Euler(0, -oldRotDeg, 0);
-            triggered = true;
-        }
+            
+        }*/
 
 
         if (firstFrame)

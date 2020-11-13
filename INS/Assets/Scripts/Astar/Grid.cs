@@ -206,6 +206,7 @@ public class Grid : MonoBehaviour
         }
     }
     
+    /*
     //Function that draws the wireframe
     private void OnDrawGizmos()
     {
@@ -217,7 +218,7 @@ public class Grid : MonoBehaviour
             {
                 if (n.IsWall)//If the current node is a wall node
                 {
-                    Gizmos.color = Color.white;//Set the color of the node
+                    Gizmos.color = Color.clear;//Set the color of the node
                 }
                 else
                 {
@@ -237,4 +238,5 @@ public class Grid : MonoBehaviour
             }
         }
     }
+    */
 }
