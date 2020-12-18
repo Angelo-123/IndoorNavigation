@@ -103,8 +103,23 @@ public class QR_Scanner_Script : MonoBehaviour
 		*/
 
 		// Try to stop the camera before loading another scene
-		StartCoroutine(StopCamera(() => {	
-			SceneManager.LoadScene("UI_First");
+		StartCoroutine(StopCamera(() => {
+			if(GlobalValues.PathUpdate == true)
+            {
+				if(GlobalValues.startFloorLvl == 1)
+                {
+					SceneManager.LoadScene("FirstFloor");
+                }
+                else
+                {
+					SceneManager.LoadScene("AStarProject");
+                }
+            }
+            else
+            {
+				SceneManager.LoadScene("UI_First");
+			}
+
 		}));
 	}
 

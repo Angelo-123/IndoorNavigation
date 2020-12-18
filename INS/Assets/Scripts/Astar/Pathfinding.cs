@@ -170,6 +170,14 @@ public class Pathfinding : MonoBehaviour
 
         grid.FinalPath = FinalPath;//Set the final path
 
+        GlobalValues.xPosArray = new List<float>();
+        GlobalValues.zPosArray = new List<float>();
+
+        for (int i = 0; i < FinalPath.Count; i++)
+        {
+            GlobalValues.xPosArray.Add(FinalPath[i].Position.x);
+            GlobalValues.zPosArray.Add(FinalPath[i].Position.z);
+        }
     }
 
     int GetManhattenDistance(Node a_nodeA, Node a_nodeB)

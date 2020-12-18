@@ -17,7 +17,8 @@ public class DistanceFromPath : MonoBehaviour
     void Start()
     {
         Panel2.SetActive(false);
-        InvokeRepeating("CalcDist", 3.0f, 1.0f);
+        //InvokeRepeating("CalcDist", 3.0f, 1.0f);
+        InvokeRepeating(nameof(CalcDist), 3.0f, 1.0f);
     }
 
     void CalcDist()
