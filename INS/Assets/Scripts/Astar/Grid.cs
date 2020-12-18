@@ -38,6 +38,7 @@ public class Grid : MonoBehaviour
         GlobalValues.newPath = true;
     }
 
+
     void CreateGrid()
     {
         grid = new Node[gridSizeX, gridSizeY];//Declare the array of nodes.
@@ -237,6 +238,6 @@ public class Grid : MonoBehaviour
                 Gizmos.DrawCube(n.Position, Vector3.one * (nodeDiameter - Distance));//Draw the node at the position of the node.
             }
         }
-    }
-    */
+    }*/
+    
 }

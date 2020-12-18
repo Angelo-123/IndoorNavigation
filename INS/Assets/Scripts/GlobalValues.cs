@@ -26,6 +26,7 @@ public static class GlobalValues
     public static int startFloorBlock;     //Block 1= west of west staircase, 2=west block between east and west staircase, 3=east block between east and west staircase, 4=east of east staircase
     public static int destFloorBlock;
     public static bool eastStaircase;
+    
 
     //public static DropdownQR 
 }

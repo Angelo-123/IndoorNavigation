@@ -146,6 +146,7 @@ public class QR_Scanner_Script : MonoBehaviour
 			GlobalValues.myStartPosString = "Entrance East N1A-GF-G99K";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 0;
+			GlobalValues.startFloorBlock = 4;
 		}
 		if (ScanValue == "Entrance South N1A-GF")//Entrance South
 		{
@@ -153,6 +154,7 @@ public class QR_Scanner_Script : MonoBehaviour
 			GlobalValues.myStartPosString = "Entrance South N1A-GF";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 0;
+			GlobalValues.startFloorBlock = 3;
 		}
 		if (ScanValue == "Lift Main N1A-GF-G99F")//Lift Main
 		{
@@ -160,6 +162,7 @@ public class QR_Scanner_Script : MonoBehaviour
 			GlobalValues.myStartPosString = "Lift Main N1A-GF-G99F";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 0;
+			GlobalValues.startFloorBlock = 4;
 		}
 		if (ScanValue == "Staircase East N1A-GF-G99G")//Staircase East
 		{
@@ -167,6 +170,7 @@ public class QR_Scanner_Script : MonoBehaviour
 			GlobalValues.myStartPosString = "Staircase East N1A-GF-G99G";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 0;
+			GlobalValues.startFloorBlock = 4;
 		}
 		if (ScanValue == "Staircase West N1A-GF-G99H")//Staircase West
 		{
@@ -174,6 +178,7 @@ public class QR_Scanner_Script : MonoBehaviour
 			GlobalValues.myStartPosString = "Staircase West N1A-GF-G99H";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 0;
+			GlobalValues.startFloorBlock = 1;
 		}
 		if (ScanValue == "Waiting Area N1A-GF-G42")//Waiting Area
 		{
@@ -181,6 +186,7 @@ public class QR_Scanner_Script : MonoBehaviour
 			GlobalValues.myStartPosString = "Waiting Area N1A-GF-G42";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 0;
+			GlobalValues.startFloorBlock = 4;
 		}
 		if (ScanValue == "Office Passage N1A-GF-G99I")//Office Passage
 		{
@@ -188,6 +194,7 @@ public class QR_Scanner_Script : MonoBehaviour
 			GlobalValues.myStartPosString = "Office Passage N1A-GF-G99I";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 0;
+			GlobalValues.startFloorBlock = 2;
 		}
 
 		//First Floor
@@ -196,36 +203,94 @@ public class QR_Scanner_Script : MonoBehaviour
 			GlobalValues.myStartPosString = "FF 150 WAITING AREA";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 1;
+			GlobalValues.startFloorBlock = 4;
 		}
 		if (ScanValue == "FF 199G STAIRS EAST")//STAIRS EAST
 		{
 			GlobalValues.myStartPosString = "FF 199G STAIRS EAST";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 1;
+			GlobalValues.startFloorBlock = 4;
 		}
 		if (ScanValue == "FF 199H STAIRS WEST")//STAIRS WEST
 		{
 			GlobalValues.myStartPosString = "FF 199H STAIRS WEST";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 1;
+			GlobalValues.startFloorBlock = 1;
 		}
 		if (ScanValue == "FF ENTRANCE SOUTH")//ENTRANCE SOUTH
 		{
 			GlobalValues.myStartPosString = "FF ENTRANCE SOUTH";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 1;
+			GlobalValues.startFloorBlock = 3;
 		}
 		if (ScanValue == "FF HALL SOUTH")//Hall Passage
 		{
 			GlobalValues.myStartPosString = "FF HALL SOUTH";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 1;
+			GlobalValues.startFloorBlock = 2;
 		}
 		if (ScanValue == "FF HALL NORTH")//Hall Passage
 		{
 			GlobalValues.myStartPosString = "FF HALL NORTH";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 1;
+			GlobalValues.startFloorBlock = 2;
+		}
+
+
+		//Second Floor
+		if (ScanValue == "SF Hall North")//SF Hall North
+		{
+			GlobalValues.myStartPosString = "SF Hall North";
+			GlobalValues.newPath = true;
+			GlobalValues.startFloorLvl = 2;
+			GlobalValues.startFloorBlock = 2;
+		}
+		if (ScanValue == "SF Hall South")//SF Hall South
+		{
+			GlobalValues.myStartPosString = "SF Hall South";
+			GlobalValues.newPath = true;
+			GlobalValues.startFloorLvl = 2;
+			GlobalValues.startFloorBlock = 2;
+		}
+		if (ScanValue == "SF 236 Waiting Area")//SF 236 Waiting Area
+		{
+			GlobalValues.myStartPosString = "SF 236 Waiting Area";
+			GlobalValues.newPath = true;
+			GlobalValues.startFloorLvl = 2;
+			GlobalValues.startFloorBlock = 4;
+		}
+		if(ScanValue == "SF 299C Staircase West")//SF 299C Staircase West
+		{
+			GlobalValues.myStartPosString = "SF 299C Staircase West";
+			GlobalValues.newPath = true;
+			GlobalValues.startFloorLvl = 2;
+			GlobalValues.startFloorBlock = 1;
+		}
+		if (ScanValue == "SF 299D Staircase East")//SF 299D Staircase East
+		{
+			GlobalValues.myStartPosString = "SF 299D Staircase East";
+			GlobalValues.newPath = true;
+			GlobalValues.startFloorLvl = 2;
+			GlobalValues.startFloorBlock = 4;
+		}
+		if (ScanValue == "SF 299E Lift Main")//SF 299E Lift Main
+		{
+			GlobalValues.myStartPosString = "SF 299E Lift Main";
+			GlobalValues.newPath = true;
+			GlobalValues.startFloorLvl = 2;
+			GlobalValues.startFloorBlock = 4;
+		}
+		if (ScanValue == "SF 299H Passage South")//SF 299H Passage South
+		{
+			GlobalValues.myStartPosString = "SF 299H Passage South";
+			GlobalValues.newPath = true;
+			GlobalValues.startFloorLvl = 2;
+			GlobalValues.startFloorBlock = 3;
 		}
 		TextHeader.text += "StartPos: " + GlobalValues.myStartPosString + "\n";
 

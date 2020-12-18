@@ -12,12 +12,21 @@ public class RotateWorld : MonoBehaviour
     {
         Input.compass.enabled = true;
         // Orient an object to point to magnetic north.
-        World.transform.rotation = Quaternion.Euler(0, -Input.compass.magneticHeading+180, 0);
+        //World.transform.rotation = Quaternion.Euler(0, -Input.compass.magneticHeading+180, 0);
+        StartCoroutine(LateStart((float)0.01));
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator LateStart(float waitTime)
     {
-        
+        yield return new WaitForSeconds(waitTime);
+
+        World.transform.rotation = Quaternion.Euler(0, 0, 0);
     }
+    /*
+    private void Update()
+    {
+        World.transform.rotation = Quaternion.Euler(0, Input.compass.magneticHeading, 0);
+    }*/
+
+
 }
