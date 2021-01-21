@@ -7,8 +7,11 @@ using UnityEngine.UI;
 public class pedo : MonoBehaviour
 {
 	public Text acc;
+	public Text Steps;
 
 	public GameObject User;
+	public GameObject User2;
+	public GameObject User3;
 
 
 	public float loLim = 0.005f; // level to fall to the low state 
@@ -37,7 +40,7 @@ public class pedo : MonoBehaviour
 
     private void Start()
     {
-		Input.compass.enabled = true;
+		//Input.compass.enabled = true;
 		//Input.acceleration.enabled = true;
 
 	}
@@ -45,11 +48,13 @@ public class pedo : MonoBehaviour
     // Update is called once per frame
     void Update()
 	{
-		User.transform.rotation = Quaternion.Euler(0, Input.compass.magneticHeading, 0);
+		//User.transform.rotation = Quaternion.Euler(0, Input.compass.magneticHeading, 0);
 
 		if (steps != old_steps)
         {
 			User.transform.position += User.transform.forward*6;
+			User2.transform.position += User2.transform.forward*6;
+			User3.transform.position += User3.transform.forward*6;
 			steps_taken += 1;
 		}
 			
@@ -81,7 +86,7 @@ public class pedo : MonoBehaviour
 		}
 
 		acc.text = "pedo steps:" + steps + "\n steps_taken: " + steps_taken + "\n CurAcc: " + curAcc + "\n avgAcc: " + avgAcc + "\n delta: " + delta;
-
+		Steps.text = "Steps: " + steps;
 	}
 
 

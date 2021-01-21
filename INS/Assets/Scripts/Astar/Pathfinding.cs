@@ -75,25 +75,6 @@ public class Pathfinding : MonoBehaviour
 
     private void Update()//Every frame
     {
-        /*
-        checkStartPos();
-
-        if (GlobalValues.startFloorLvl != GlobalValues.destFloorLvl)
-        {
-            changeDestPos();
-        }
-        else
-        {
-            checkDestPos();
-        }
-
-        if (GlobalValues.stairsReached == true)
-        {
-            newFloorPos();
-        }
-
-        FindPath(StartVec, TargetVec);
-        */
 
     }
 
@@ -318,6 +299,83 @@ public class Pathfinding : MonoBehaviour
         }
 
 
+
+
+
+
+        //HomeFloor
+        if (GlobalValues.startFloorLvl == 5)
+        {
+            switch (StartPosString)
+            {
+                case "Home - Study":
+                    startPosObject = GameObject.Find("Home - Study");
+                    break;
+                case "Home - Kitchen":
+                    startPosObject = GameObject.Find("Home - Kitchen");
+                    break;
+                case "Home - Living":
+                    startPosObject = GameObject.Find("Home - Living");
+                    break;
+                case "Home - Balcony":
+                    startPosObject = GameObject.Find("Home - Balcony");
+                    break;
+                case "Home - Stairs":
+                    startPosObject = GameObject.Find("Home - Stairs");
+                    break;
+                default:
+                    break;
+            }
+
+            if (startPosObject != null)
+            {
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+            
+        }
+
+
+
+        //Home First Floor
+        if (GlobalValues.startFloorLvl == 6)
+        {
+            switch (StartPosString)
+            {
+                case "HomeFF -  Bedroom A":
+                    startPosObject = GameObject.Find("HomeFF -  Bedroom A");
+                    break;
+                case "HomeFF -  Bedroom B":
+                    startPosObject = GameObject.Find("HomeFF -  Bedroom B");
+                    break;
+                case "HomeFF -  Bedroom Main":
+                    startPosObject = GameObject.Find("HomeFF -  Bedroom Main");
+                    break;
+                case "HomeFF -  Bathroom":
+                    startPosObject = GameObject.Find("HomeFF -  Bathroom");
+                    break;
+                case "HomeFF -  Stairs":
+                    startPosObject = GameObject.Find("HomeFF -  Stairs");
+                    break;
+                case "HomeFF -  Bathroom Main":
+                    startPosObject = GameObject.Find("HomeFF -  Bathroom Main");
+                    break;
+                default:
+                    break;
+            }
+
+            if (startPosObject != null)
+            {
+                StartVec = new Vector3(startPosObject.transform.position.x, startPosObject.transform.position.y, startPosObject.transform.position.z);
+            }
+
+        }
+
+
+
+
+
+
+
         StartPosition.position = StartVec;
         print("StartVect set: " + StartVec);
     }
@@ -329,7 +387,6 @@ public class Pathfinding : MonoBehaviour
          //Ground Floor
         if (GlobalValues.destFloorLvl == 0)
         {
-
             switch (DestPosString)
             {
                 case "G01 - Meeting Roo":
@@ -762,7 +819,78 @@ public class Pathfinding : MonoBehaviour
         }
 
 
-            TargetPosition.position = TargetVec;
+        //HomeFloor
+        if (GlobalValues.destFloorLvl == 5)
+        {
+            switch (DestPosString)
+            {
+                case "Home - Study":
+                    destPosObject = GameObject.Find("Home - Study");
+                    break;
+                case "Home - Kitchen":
+                    destPosObject = GameObject.Find("Home - Kitchen");
+                    break;
+                case "Home - Living":
+                    destPosObject = GameObject.Find("Home - Living");
+                    break;
+                case "Home - Balcony":
+                    destPosObject = GameObject.Find("Home - Balcony");
+                    break;
+                case "Home - Stairs":
+                    destPosObject = GameObject.Find("Home - Stairs");
+                    break;
+                default:
+                    break;
+            }
+        
+
+            if (destPosObject != null)
+            {
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+        }
+
+
+
+        //Home First Floor
+        if (GlobalValues.destFloorLvl == 6)
+        {
+            switch (DestPosString)
+            {
+                case "HomeFF -  Bedroom A":
+                    destPosObject = GameObject.Find("HomeFF -  Bedroom A");
+                    break;
+                case "HomeFF -  Bedroom B":
+                    destPosObject = GameObject.Find("HomeFF -  Bedroom B");
+                    break;
+                case "HomeFF -  Bedroom Main":
+                    destPosObject = GameObject.Find("HomeFF -  Bedroom Main");
+                    break;
+                case "HomeFF -  Bathroom":
+                    destPosObject = GameObject.Find("HomeFF -  Bathroom");
+                    break;
+                case "HomeFF - Stairs":
+                    destPosObject = GameObject.Find("HomeFf - Stairs");
+                    break;
+                case "HomeFF -  Bathroom Main":
+                    destPosObject = GameObject.Find("HomeFF -  Bathroom Main");
+                    break;
+                default:
+                    break;
+            }
+
+
+            if (destPosObject != null)
+            {
+                TargetVec = new Vector3(destPosObject.transform.position.x, destPosObject.transform.position.y, destPosObject.transform.position.z);
+            }
+        }
+
+
+
+
+
+        TargetPosition.position = TargetVec;
         print("TargetVec set: " + TargetVec);
     }
 

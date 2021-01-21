@@ -9,11 +9,11 @@ public class Path_Loader : MonoBehaviour
 
     public void OnGoClick()
     { 
-        
+        /*
         if (GlobalValues.dropQrScript == null)
         {
             GlobalValues.dropQrScript = GameObject.Find("DropdownStart").GetComponent<DropdownQR>();
-        }
+        }*/
 
         if (GlobalValues.inputSearch == null)
         {
@@ -33,7 +33,12 @@ public class Path_Loader : MonoBehaviour
         {
             SceneManager.LoadScene("SecondFloor");
         }
-        
+
+
+        else if (GlobalValues.startFloorLvl == 5)
+        {
+            SceneManager.LoadScene("HomeFloor");
+        }
 
     }
 

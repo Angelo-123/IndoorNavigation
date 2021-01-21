@@ -35,7 +35,7 @@ public class DistanceFromPath : MonoBehaviour
         minDist = DiagDistArray.Min() / 10;
         distx.text = "Min Distance: " + minDist;
 
-        if (minDist > 5)
+        if (minDist > 2.5)
         {
             if (Panel2 != null)
             {
@@ -48,5 +48,10 @@ public class DistanceFromPath : MonoBehaviour
     {
         SceneManager.LoadScene("QR_Scanner");
         GlobalValues.PathUpdate = true;
+    }
+    public void OnCancelClick()
+    {
+        GlobalValues.PathUpdate = false;
+	Panel2.SetActive(false);
     }
 }

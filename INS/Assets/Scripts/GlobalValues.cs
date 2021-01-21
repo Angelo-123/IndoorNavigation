@@ -34,4 +34,6 @@ public static class GlobalValues
     public static List<float> zPosArray = new List<float>();
 
     public static bool PathUpdate;
+
+    public static int startRot;
 }

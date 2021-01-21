@@ -21,6 +21,8 @@ public class InputSearch : MonoBehaviour
     private void Start()
     {
         dropdown.options.Clear();
+        dropdown.itemText.fontSize = 10;
+        dropdown.itemText.horizontalOverflow = HorizontalWrapMode.Overflow;
 
         items.Add("G01 - Meeting Room");
         items.Add("G02 - Meeting Room");
@@ -158,6 +160,15 @@ public class InputSearch : MonoBehaviour
         items.Add("SF 242 - Office");
         items.Add("SF 243 - Office");
         items.Add("SF 244 - Office");
+
+
+        //HomeFloor
+        items.Add("Home - Study");
+        items.Add("Home - Kitchen");
+        items.Add("Home - Living");
+        items.Add("Home - Balcony");
+        items.Add("Home - Stairs");
+
 
 
 
@@ -1000,6 +1011,38 @@ public class InputSearch : MonoBehaviour
             GlobalValues.myDestPosString = "SF 244 - Office";
             GlobalValues.destFloorLvl = 2;
             GlobalValues.destFloorBlock = 4;
+        }
+
+
+
+
+
+
+        //HomeFloor
+        if (dropdown.captionText.text == "Home - Study")//
+        {
+            GlobalValues.myDestPosString = "Home - Study";
+            GlobalValues.destFloorLvl = 5;
+        }
+        if (dropdown.captionText.text == "Home - Kitchen")//
+        {
+            GlobalValues.myDestPosString = "Home - Kitchen";
+            GlobalValues.destFloorLvl = 5;
+        }
+        if (dropdown.captionText.text == "Home - Living")//
+        {
+            GlobalValues.myDestPosString = "Home - Living";
+            GlobalValues.destFloorLvl = 5;
+        }
+        if (dropdown.captionText.text == "Home - Balcony")//
+        {
+            GlobalValues.myDestPosString = "Home - Balcony";
+            GlobalValues.destFloorLvl = 5;
+        }
+        if (dropdown.captionText.text == "Home - Stairs")//
+        {
+            GlobalValues.myDestPosString = "Home - Stairs";
+            GlobalValues.destFloorLvl = 5;
         }
 
 

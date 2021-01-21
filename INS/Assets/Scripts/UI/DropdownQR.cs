@@ -16,6 +16,8 @@ public class DropdownQR : MonoBehaviour
         var dropdown = transform.GetComponent<Dropdown>();
 
         dropdown.options.Clear();
+        dropdown.itemText.fontSize = 10 ;
+        dropdown.itemText.horizontalOverflow = HorizontalWrapMode.Overflow;
 
         List<string> items = new List<string>();
         items.Add("Entrance East");
@@ -40,6 +42,15 @@ public class DropdownQR : MonoBehaviour
         items.Add("SF 299D Staircase East");
         items.Add("SF 299E Lift Main");
         items.Add("SF 299H Passage South");
+
+
+        //HomeFloor
+        items.Add("Home - Study");
+        items.Add("Home - Kitchen");
+        items.Add("Home - Living");
+        items.Add("Home - Balcony");
+        items.Add("Home - Stairs");
+
 
         foreach (var item in items)
         {
@@ -207,6 +218,48 @@ public class DropdownQR : MonoBehaviour
             GlobalValues.startFloorLvl = 2;
             GlobalValues.startFloorBlock = 3;
         }
+
+
+
+
+        //HomeFloor
+        if (index == 20)
+        {
+            GlobalValues.myStartPosString = "Home - Study";
+            GlobalValues.newPath = true;
+            GlobalValues.startFloorLvl = 5;
+            GlobalValues.startRot = 180;
+        }
+        if (index == 21)
+        {
+            GlobalValues.myStartPosString = "Home - Kitchen";
+            GlobalValues.newPath = true;
+            GlobalValues.startFloorLvl = 5;
+            GlobalValues.startRot = 180;
+        }
+        if (index == 22)
+        {
+            GlobalValues.myStartPosString = "Home - Living";
+            GlobalValues.newPath = true;
+            GlobalValues.startFloorLvl = 5;
+            GlobalValues.startRot = 180;
+        }
+        if (index == 23)
+        {
+            GlobalValues.myStartPosString = "Home - Balcony";
+            GlobalValues.newPath = true;
+            GlobalValues.startFloorLvl = 5;
+            GlobalValues.startRot = 180;
+        }
+        if (index == 24)
+        {
+            GlobalValues.myStartPosString = "Home - Stairs";
+            GlobalValues.newPath = true;
+            GlobalValues.startFloorLvl = 5;
+            GlobalValues.startRot = 180;
+        }
+
+
 
     }
 }

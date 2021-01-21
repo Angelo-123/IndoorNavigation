@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RotatePerson : MonoBehaviour
+public class ComplimentaryFilter : MonoBehaviour
 {
+    [Header("Tweaks")]
+    private Quaternion rotation;
+    private float gyroRot;
+    private float startRot = 180;
+
     public Text rotationText;
     public GameObject User;
-    public Image compassImg;
     public Vector3 StartVec;
 
-
-    float currentRotDeg, currentRotRad, currentRotSin, currentRotCos;
+    float currentRotRad, currentRotSin, currentRotCos;
     float newRotation, newRotDeg;
 
-    
     private Queue<float> Sin_samples = new Queue<float>();
     private Queue<float> Cos_samples = new Queue<float>();
     private int windowSize = 25;
@@ -23,14 +25,22 @@ public class RotatePerson : MonoBehaviour
     public float CosAverage { get; private set; }
 
 
+    float compassMeasure, gyroMeasure, output, newGyro, filteredOutput;
+
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         Input.compass.enabled = true;
+        GyroManager.Instance.EnableGyro();
+
         StartCoroutine(LateStart((float)0.1));
+
+
+        //output = (float)(0.02 * Input.compass.magneticHeading + 0.98 * GyroManager.Instance.GetGyroRotation().eulerAngles.z);
+        output = Input.compass.magneticHeading;
     }
-    
+
     IEnumerator LateStart(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
@@ -39,26 +49,34 @@ public class RotatePerson : MonoBehaviour
         User.transform.position = StartVec;
     }
 
-
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        MAF(Input.compass.magneticHeading);
+        rotation = GyroManager.Instance.GetGyroRotation();
+        gyroRot = -rotation.eulerAngles.z;
+        while (gyroRot < 0)
+        {
+            gyroRot += 360;
+        }
+
+        compassMeasure = Input.compass.magneticHeading;
+        gyroMeasure = gyroRot;
+
+        newGyro = (float)0.5 * (gyroMeasure + output);
+
+        output = (float)(0.02 * compassMeasure) + (float)(0.98 * newGyro);
+
+        filteredOutput = MAF(output);
 
 
-        User.transform.rotation = Quaternion.Euler(0, newRotDeg + GlobalValues.startRot, 0);
+        User.transform.rotation = Quaternion.Euler(0, filteredOutput + startRot, 0);
 
-        compassImg.transform.rotation = Quaternion.Euler(0, 0, newRotDeg);
 
-        currentRotDeg = Mathf.RoundToInt(currentRotDeg);
-        newRotDeg = Mathf.RoundToInt(newRotDeg);
-
+        //rotationText.text = "gyroRotation: " + (-rotation.eulerAngles.z + 360) + "°";
     }
-
 
     private float MAF(float currentRotDeg)
     {
-        //currentRotDeg = Input.compass.magneticHeading;
         currentRotRad = currentRotDeg * (Mathf.PI * 2) / 360;
         currentRotSin = Mathf.Sin(currentRotRad);
         currentRotCos = Mathf.Cos(currentRotRad);
@@ -91,5 +109,4 @@ public class RotatePerson : MonoBehaviour
 
         return newRotDeg;
     }
-
 }

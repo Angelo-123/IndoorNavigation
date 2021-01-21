@@ -3,18 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RotatePerson : MonoBehaviour
+public class FollowGyro : MonoBehaviour
 {
+    [Header("Tweaks")]
+    [SerializeField] private Quaternion baseRotation = new Quaternion(0, 0, 1, 0);
+    private Quaternion rotation;
+    private Quaternion correctedRot;
+    private float yRot;
+    private Vector3 euler;
+    private float rot;
+    private float startRot = 180;
+
     public Text rotationText;
     public GameObject User;
-    public Image compassImg;
     public Vector3 StartVec;
 
 
     float currentRotDeg, currentRotRad, currentRotSin, currentRotCos;
     float newRotation, newRotDeg;
 
-    
     private Queue<float> Sin_samples = new Queue<float>();
     private Queue<float> Cos_samples = new Queue<float>();
     private int windowSize = 25;
@@ -25,12 +32,13 @@ public class RotatePerson : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        Input.compass.enabled = true;
+        GyroManager.Instance.EnableGyro();
+
         StartCoroutine(LateStart((float)0.1));
     }
-    
+
     IEnumerator LateStart(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
@@ -39,22 +47,32 @@ public class RotatePerson : MonoBehaviour
         User.transform.position = StartVec;
     }
 
-
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        MAF(Input.compass.magneticHeading);
+        rotation = GyroManager.Instance.GetGyroRotation();
+        //correctedRot = new Quaternion(rotation.x, rotation.y, -rotation.z, -rotation.w);
+        //yRot = baseRotation.y;
+        //euler = rotation.eulerAngles;
+        //print("euler: " + euler);
+
+        //transform.localRotation = rotation * baseRotation;
+        //rot = -correctedRot.eulerAngles.z;
+        //MAF(rot);
+        MAF(-rotation.eulerAngles.z);
+
+        User.transform.rotation = Quaternion.Euler(0, newRotDeg + startRot, 0);
 
 
-        User.transform.rotation = Quaternion.Euler(0, newRotDeg + GlobalValues.startRot, 0);
-
-        compassImg.transform.rotation = Quaternion.Euler(0, 0, newRotDeg);
-
-        currentRotDeg = Mathf.RoundToInt(currentRotDeg);
-        newRotDeg = Mathf.RoundToInt(newRotDeg);
+        //rot = -euler.z;
+        //transform.localRotation = Quaternion.Euler(0, rot, 0);
+        //print("gyro z: " + -euler.z);
+        rotationText.text = "gyroRotation: " + (-rotation.eulerAngles.z + 360) + "°";
 
     }
 
+
+    
 
     private float MAF(float currentRotDeg)
     {
@@ -91,5 +109,7 @@ public class RotatePerson : MonoBehaviour
 
         return newRotDeg;
     }
+
+
 
 }

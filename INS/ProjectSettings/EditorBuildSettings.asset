@@ -12,14 +12,17 @@ EditorBuildSettings:
     path: Assets/Scenes/QR_Scanner.unity
     guid: 40f6bf88c3f403147894370bfa7a215d
   - enabled: 1
-    path: Assets/Scenes/AstarProject.unity
+    path: Assets/Scenes/Universaty/AstarProject.unity
     guid: bc622eae8948b89469b8f80efb7e40f2
   - enabled: 1
-    path: Assets/Scenes/FirstFloor.unity
+    path: Assets/Scenes/Universaty/FirstFloor.unity
     guid: c0e32542c3568d446b242ae4d74e59e3
   - enabled: 1
-    path: Assets/Scenes/SecondFloor.unity
+    path: Assets/Scenes/Universaty/SecondFloor.unity
     guid: 28eb159c9634efb47bd86f6a33a8460e
+  - enabled: 1
+    path: Assets/Scenes/Home/HomeFloor.unity
+    guid: bc8bbe13106ceab4789c07d40595742a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 55118a6b24f3ddb41a5c838e2048f0e9,
       type: 2}

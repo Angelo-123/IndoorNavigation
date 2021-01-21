@@ -157,7 +157,6 @@ public class QR_Scanner_Script : MonoBehaviour
 		//Ground Floor
 		if (ScanValue == "Entrance East N1A-GF-G99K")//Entrance East
 		{
-			//StartPos = new Vector3(-31.0f, 0.0f, 4.0f);
 			GlobalValues.myStartPosString = "Entrance East N1A-GF-G99K";
 			GlobalValues.newPath = true;
 			GlobalValues.startFloorLvl = 0;
@@ -307,7 +306,49 @@ public class QR_Scanner_Script : MonoBehaviour
 			GlobalValues.startFloorLvl = 2;
 			GlobalValues.startFloorBlock = 3;
 		}
-		TextHeader.text += "StartPos: " + GlobalValues.myStartPosString + "\n";
+		
 
+
+	//HomeFloor
+		if (ScanValue == "Home - Study")
+		{
+			GlobalValues.myStartPosString = "Home - Study";
+			GlobalValues.newPath = true;
+			GlobalValues.startFloorLvl = 5;
+			GlobalValues.startRot = 180;
+		}
+		if (ScanValue == "Home - Kitchen")
+		{
+			GlobalValues.myStartPosString = "Home - Kitchen";
+			GlobalValues.newPath = true;
+			GlobalValues.startFloorLvl = 5;
+			GlobalValues.startRot = 180;
+		}
+		if (ScanValue == "Home - Living")
+		{
+			GlobalValues.myStartPosString = "Home - Living";
+			GlobalValues.newPath = true;
+			GlobalValues.startFloorLvl = 5;
+			GlobalValues.startRot = 180;
+		}
+		if (ScanValue == "Home - Balcony")
+		{
+			GlobalValues.myStartPosString = "Home - Balcony";
+			GlobalValues.newPath = true;
+			GlobalValues.startFloorLvl = 5;
+			GlobalValues.startRot = 180;
+		}
+		if (ScanValue == "Home - Stairs")
+		{
+			GlobalValues.myStartPosString = "Home - Stairs";
+			GlobalValues.newPath = true;
+			GlobalValues.startFloorLvl = 5;
+			GlobalValues.startRot = 180;
+		}
+
+
+
+
+		TextHeader.text += "StartPos: " + GlobalValues.myStartPosString + "\n";
 	}
 }
